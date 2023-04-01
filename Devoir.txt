@@ -1,0 +1,36 @@
+ 1)Ajouter  le service .                                        
+ 2)Lister les Services   
+ 3)Ajouter un Employé
+ 4)Lister les    Journaliers                                                   
+ 5)Quitter .                                                   
+ Règles de gestion .
+Service(id,libelle). Le libellé d’un service est unique .
+Un  Employé est caractérisé (id ,nomComplet , retraité[Vrai|Faux]], poste[“Journalier”|”Embauche”],)
+Un Employé est affecté à 0 ou un Service . Un Journalier n’a pas de Service . 
+Un Service peut   avoir 0 ou plusieurs Employe      
+     
+   TAF:                                                    
+ 1.Modelisation (UML)
+    a-Diagramme Use Case
+    b-Diagramme de Classe
+    c-Diagramme de Sequence 
+      -ajouter Service
+      -Ajouter un Employé
+      -Lister les    Journaliers 
+JAVA
+   2.Créer les Classes de Description de Donnée(model) 
+   3.Creer le Menu  
+   4.Créer la Classes EmployeService  
+     -
+
+
+
+Attributs
+Attributs Navigabilite
+Methodes
+Getters/Setters
+Constructeur avec et Sans Argument
+Affiche
+Réaliser la Navigabilité
+ Créer la Classes EmployeService qui définit les fonction
+Créer la Classe Main qui représente la classe Principal
