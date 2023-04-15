@@ -34,11 +34,13 @@ public class ClientService {
 
     public Client   findClientByTelephone(String tel){
         for (int index = 0; index < nbreClient; index++) {
-               if(tabClients[index].getTelephone()==tel){
+               if(tabClients[index].getTelephone().compareTo(tel)==0){
                 return tabClients[index];
                }
         }
         return null;
+
+        
     }
    
 

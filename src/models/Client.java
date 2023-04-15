@@ -1,10 +1,15 @@
 package models;
 
+import java.util.ArrayList;
+
 public class Client {
 
     private int id;
     private String nomComplet;
     private String telephone;
+    //Attributs Navigationnels  
+      //OneToMany
+   // private  ArrayList<Compte> comptes=new ArrayList<>();
 
     //Methodes => Fonctions ou une Procedure
     /*
@@ -20,7 +25,7 @@ public class Client {
 
      //Constructeur(s)
      public Client(){
-
+        
      }
 
    

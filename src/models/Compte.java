@@ -4,7 +4,20 @@ public class Compte {
     private int id;
     private String numCompte;
     private double solde;
+
+    //Attributs Navigationnels => Issu des Relations
+      //ManyToOne
+      private Client client;
+
     
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
     public Compte() {
     }
 
