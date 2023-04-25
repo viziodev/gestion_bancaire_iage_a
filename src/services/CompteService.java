@@ -16,4 +16,13 @@ public class CompteService {
         comptes.add(compte);
     }
 
+    public Compte findCompteByNum(String numero){
+       for (Compte compte : comptes) {
+           if(compte.getNumCompte().compareTo(numero)==0){
+               return compte;
+           }
+       }
+          return null;
+    }
+
 }

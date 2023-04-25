@@ -1,21 +1,34 @@
 package models;
 
+import java.util.ArrayList;
+
 public class Compte {
     private int id;
     private String numCompte;
     private double solde;
 
     //Attributs Navigationnels => Issu des Relations
-      //ManyToOne
-      private Client client;
+    //ManyToOne  (Getters et Setters)
+    private Client client;
 
-    
+     private  ArrayList<Transaction> transactions=new ArrayList<>();
+
+    public void addTransaction(Transaction transaction){
+        transactions.add(transaction);
+    }
+
+    public ArrayList<Transaction> getTransactions() {
+        return transactions;
+    }
+
     public Client getClient() {
         return client;
     }
 
     public void setClient(Client client) {
-        this.client = client;
+         //Relation dans le sens Compte==>Client
+         this.client = client;
+
     }
 
     public Compte() {
@@ -47,9 +60,10 @@ public class Compte {
 
     @Override
     public String toString() {
-        return "ID :" + id 
-               + "Numero Compte " + numCompte 
-               + "Solde " + solde ;
+        return    "ID :" + id 
+               +  "  Numero Compte : " + numCompte 
+               +  "  Solde : " + solde
+               +  "  Client : " + client.getNomComplet()  ;
     }
 
     @Override

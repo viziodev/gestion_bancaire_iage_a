@@ -8,8 +8,18 @@ public class Client {
     private String nomComplet;
     private String telephone;
     //Attributs Navigationnels  
-      //OneToMany
-   // private  ArrayList<Compte> comptes=new ArrayList<>();
+    //OneToMany(Getters et une addCompte==> Ajouter un compte au client)
+    private  ArrayList<Compte> comptes=new ArrayList<>();
+    //Getters
+    public ArrayList<Compte> getComptes() {
+        return comptes;
+    }
+    public void addCompte(Compte compte){
+        //Relation dans le sens Client==>Compte
+        comptes.add(compte);
+    }
+     
+
 
     //Methodes => Fonctions ou une Procedure
     /*
@@ -23,7 +33,11 @@ public class Client {
      * }
      */
 
-     //Constructeur(s)
+    
+
+
+
+    //Constructeur(s)
      public Client(){
         
      }

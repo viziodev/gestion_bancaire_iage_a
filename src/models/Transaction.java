@@ -4,9 +4,18 @@ import java.util.Date;
 
 public class Transaction {
     private double montant;
-    private Date  date;
+    private Date  date;//Date du Jour
     private Type type;
+
+    //Navigationnel
+    private Compte compte;
     
+    public Compte getCompte() {
+        return compte;
+    }
+    public void setCompte(Compte compte) {
+        this.compte = compte;
+    }
     public Transaction() {
     }
     public double getMontant() {
